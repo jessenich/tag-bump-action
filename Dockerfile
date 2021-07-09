@@ -6,8 +6,9 @@ LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="https://github.com/jessenich/tag-bump-action"
 LABEL "homepage"="https://github.com/jessenich/tag-bump-action" 
-LABEL "maintainer"="Nick Sjostrom"
+LABEL "maintainer"="Jesse N. <jesse@keplerdev.com>"
 
+RUN apk install --update -no-cache git curl
 COPY ./semver.sh ./semver
 RUN install ./semver /usr/local/bin
 COPY entrypoint.sh /entrypoint.sh
