@@ -1,11 +1,11 @@
 name: Bump version
 on:
+  workflow_dispatch:
+  
   push:
     branches:
       - master
       - main
-    tags:
-      - v*
 jobs:
   build:
     runs-on: ubuntu-latest
