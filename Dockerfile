@@ -21,4 +21,4 @@ RUN apk update && \
       npm && \
       npm install -g semver;
 
-ENTRYPOINT ["/entrypoint.sh"]\
+ENTRYPOINT ["/entrypoint.sh"]
