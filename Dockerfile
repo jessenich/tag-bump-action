@@ -10,6 +10,7 @@ LABEL "homepage"="https://github.com/jessenich/tag-bump-action"
 LABEL "maintainer"="Jesse N. <jesse@keplerdev.com>"
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 RUN apk update && \
     apk add \
